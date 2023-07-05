@@ -1,0 +1,8 @@
+#buttonList {
+    margin: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}

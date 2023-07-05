@@ -1,0 +1,54 @@
+<div id="contenedor">
+    <div id="central">
+        <div id="login">
+            <div class="titulo" *ngIf="!updadetUser">
+                Sign in
+            </div>
+
+            <div class="titulo" *ngIf="updadetUser">
+                Update User
+            </div>
+
+
+
+            <form id="loginform" [formGroup]="profileForm">
+                <input type="text" placeholder="Name" formControlName="name">
+                <div *ngIf="profileForm.controls.name.errors && send"> Hay un error</div>
+                <div *ngIf="invalidRegister"> sorry this user has already been registered</div>
+
+                <input type="text" placeholder="email" required formControlName="email">
+                <div *ngIf="profileForm.controls.email.errors && send"> Hay un error</div>
+
+                <input type="text" placeholder="telephone" required formControlName="telephone">
+                <div *ngIf="profileForm.controls.telephone.errors && send"> Hay un error</div>
+
+                <input type="text" placeholder="address" required formControlName="address">
+                <div *ngIf="profileForm.controls.address.errors && send"> Hay un error</div>
+
+                <input type="password" placeholder="password" required formControlName="password">
+                <div *ngIf="profileForm.controls.password.errors && send"> Hay un error</div>
+
+                <input type="text" placeholder="document" required formControlName="document">
+                <div *ngIf="profileForm.controls.document.errors && send"> Hay un error</div>
+
+                <div style="color: aliceblue;"> {{message}}</div>
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" (click)="saveUser()" *ngIf="!updadetUser">
+                    Sing in
+                  </button>
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" (click)="updateUser(factsUserUpdate[0].document)" *ngIf="updadetUser">
+                    Update User
+                  </button>
+
+            </form>
+            <div class="inferior">
+                <a routerLink=''>Go Login</a>
+            </div>
+
+            <div class="inferior">
+                <a routerLink="/listUsers">Go user list</a>
+            </div>
+        </div>
+    </div>
+</div>

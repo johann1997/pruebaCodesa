@@ -1,4 +1,4 @@
-nav {
+body {
     font-family: 'Overpass', sans-serif;
     font-weight: normal;
     font-size: 100%;
@@ -115,5 +115,5 @@ nav {
 }
 
 .inferior a:hover {
-    color: #e3edf3;
+    color: #3282b8;
 }

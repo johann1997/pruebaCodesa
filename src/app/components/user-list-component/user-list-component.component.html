@@ -1,0 +1,22 @@
+<div class="card mb-4" *ngFor="let users of facts; let i = index">
+    <div class="card-header">
+        <h1>Users {{i+1}}</h1>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><a>Name:{{users.name}}</a></li>
+        <li class="list-group-item">Email: {{users.email}}</li>
+        <li class="list-group-item">Telephone: {{users.telephone}}</li>
+        <li class="list-group-item">Address: {{users.address}}</li>
+    </ul>
+    <li class="list-group-item" id="buttons">
+        <button id="buttonList" type="button" class="btn btn-secondary" routerLink='/registerForm' (click)="updateUser(i)">
+        Update
+      </button>
+        <button id="buttonList" class="btn btn-secondary" routerLink='/registerForm'>
+        Delete
+      </button>
+        <button id="buttonList" class="btn btn-secondary" routerLink='/registerForm'>
+        Add
+      </button>
+    </li>
+</div>

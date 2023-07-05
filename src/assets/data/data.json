@@ -1,0 +1,37 @@
+{
+    "Usuario": [{
+            "name": "Johann",
+            "email": "johann.montoya@uao.edu.co",
+            "telephone": "3233638029",
+            "address": "Carrera 27 #80-37",
+            "password": "Auto11111",
+            "document": "111111"
+
+        },
+        {
+            "name": "Cristian",
+            "email": "cristian.reyes@uao.edu.co",
+            "telephone": "3772658794",
+            "address": "Carrera 80 #50-7",
+            "password": "Auto22222",
+            "document": "22222"
+        },
+        {
+            "name": "Santi",
+            "email": "santi.reyes@uao.edu.co",
+            "telephone": "3698546588",
+            "address": "Carrera 25 #20-3",
+            "password": "Auto33333",
+            "document": "33333"
+        },
+        {
+            "name": "Lud Yorlady",
+            "email": "lud.rubiano@uao.edu.co",
+            "telephone": "3566965353",
+            "address": "Carrera 27 #50-30",
+            "password": "Auto44444",
+            "document": "444444"
+
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+<div id="contenedor">
+    <div id="central">
+        <div id="login">
+            <div class="titulo">
+                Login
+            </div>
+            <form id="loginform" [formGroup]="loginForm">
+                <input type="text" name="name" placeholder="Name" formControlName="userName">
+                <div *ngIf="loginForm.controls.userName.errors && send"> Hay un error</div>
+
+                <input type="password" name="password" placeholder="password" required formControlName="password">
+                <div *ngIf="loginForm.controls.password.errors && send"> Hay un error</div>
+
+                <div *ngIf="noAccess"> contraseña o usuario incorrecto</div>
+                <button type="submit" title="Ingresar" name="Ingresar" (click)="login()">Login</button>
+            </form>
+            <div class="inferior">
+                <a href="#" routerLink="registerForm">Registar Usuario</a>
+            </div>
+        </div>
+    </div>
+</div>
